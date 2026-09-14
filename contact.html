@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Us | Shaa Marco</title>
+  </head>
+  <body class="inner-page">
+    <div id="site-header"></div>
+    <main>
+      <!-- Contact Page Banner -->
+      <section class="inner-hero contact-hero">
+        <div class="inner-hero-bg"></div>
+        <div class="inner-hero-glow inner-hero-glow-left"></div>
+        <div class="inner-hero-glow inner-hero-glow-right"></div>
+
+        <div class="inner-hero-content">
+          <div class="inner-hero-badge">
+            <i class="fas fa-envelope"></i>
+            Contact Shaa Marco
+          </div>
+
+          <h1 class="inner-hero-title">
+            We're Here to
+            <span>Help You Stay Cool</span>
+          </h1>
+
+          <p class="inner-hero-text">
+            Have a question, need an A/C service, or want a free quote? Get in
+            touch with our team and we'll be happy to help you with the right
+            solution for your home or business.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact" id="contact">
+        <div class="section-header reveal">
+          <span class="section-tag">Contact Us</span>
+          <h2 class="section-title">
+            Get Your <span class="highlight">Free Quote</span>
+          </h2>
+          <p class="section-desc">
+            Ready to experience cool comfort? Reach out to us and we'll get back
+            to you within 24 hours.
+          </p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Let’s Talk About Your A/C Needs</h3>
+            <p>
+              Whether you need maintenance, repair, cleaning, installation, or
+              urgent support, our team is ready to help you find the right
+              solution.
+            </p>
+
+            <div class="contact-details">
+              <a
+                href="tel:+966501234567"
+                class="contact-item contact-item-link"
+              >
+                <div class="contact-item-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+
+                <div>
+                  <h4>Phone</h4>
+                  <p>+966 50 123 4567</p>
+                </div>
+              </a>
+
+              <a
+                href="mailto:info@shaamarco.com"
+                class="contact-item contact-item-link"
+              >
+                <div class="contact-item-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+
+                <div>
+                  <h4>Email</h4>
+                  <p>info@shaamarco.com</p>
+                </div>
+              </a>
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fas fa-location-dot"></i>
+                </div>
+                <div>
+                  <h4>Address</h4>
+                  <p>123 Cooling Street, Riyadh, Saudi Arabia</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div>
+                  <h4>Working Hours</h4>
+                  <p>Sat - Thu: 8:00 AM - 8:00 PM</p>
+                  <p>Fri: Emergency Only</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="contact-form reveal">
+            <form id="contactForm" onsubmit="handleSubmit(event)">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="John Doe"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="+966 50 123 4567"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="john@example.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="service">Service Needed</label>
+                <select id="service" required>
+                  <option value="">Select a service</option>
+                  <option value="maintenance">A/C Maintenance</option>
+                  <option value="repair">A/C Repair</option>
+                  <option value="cleaning">Deep Cleaning</option>
+                  <option value="installation">Installation</option>
+                  <option value="gas">Gas Refilling</option>
+                  <option value="emergency">Emergency Service</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  placeholder="Tell us about your A/C needs..."
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-btn">
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

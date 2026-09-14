@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Shaa Marco | A/C Maintenance, Repair & Cleaning</title>
+  </head>
+  <body class="home-page">
+    <div id="site-header"></div>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fas fa-cog"></i>
+            Professional A/C Services
+          </div>
+          <h1 class="hero-title">
+            Keep Your Space
+            <span class="highlight">Cool & Comfortable</span> with Shaa Marco
+          </h1>
+          <p class="hero-subtitle">
+            Expert air conditioning maintenance, repair, and cleaning services.
+            We ensure your cooling systems run at peak performance all year
+            round.
+          </p>
+          <div class="hero-buttons">
+            <a href="services.html" class="btn btn-primary">
+              Our Services <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="contact.html" class="btn btn-outline">
+              Contact Us <i class="fas fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="scroll-indicator" id="scrollToIntro">
+          <div class="scroll-mouse">
+            <span></span>
+          </div>
+          <!-- <small>Scroll</small> -->
+        </div>
+      </section>
+
+      <!-- About Preview Section -->
+      <section class="home-about-section" id="intro">
+        <div class="home-about-container">
+          <!-- LEFT IMAGE -->
+          <div class="home-about-visual reveal">
+            <!-- Decorative Background -->
+            <div class="home-about-shape"></div>
+            <div class="home-about-glow"></div>
+
+            <div class="home-about-image-wrapper">
+              <img
+                src="https://mcp-tools-z-image-turbo.hf.space/--replicas/j7lsn/gradio_api/file=/tmp/gradio/397579937b43e299d36553d56f5cea4901a5cd29d3a23dc515b011524e34e187/image.webp"
+                alt="Professional Air Conditioning Service"
+                class="home-about-image"
+              />
+
+              <!-- Floating Experience Card -->
+              <div class="experience-card">
+                <div class="experience-icon">
+                  <i class="fas fa-award"></i>
+                </div>
+
+                <div class="experience-content">
+                  <div class="experience-number">
+                    <span class="counter" data-target="8">0</span>+
+                  </div>
+
+                  <span>Years Experience</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT CONTENT -->
+          <div class="home-about-content reveal">
+            <div class="about-mini-badge">
+              <span></span>
+              About Shaa Marco
+            </div>
+
+            <h2 class="home-about-title">
+              Your Comfort is Our
+              <span>Priority</span>
+            </h2>
+
+            <p class="home-about-text">
+              With over 8 years of experience, Shaa Marco has become a trusted
+              name in professional air conditioning services. Our experienced
+              technicians provide reliable maintenance, repair, cleaning, and
+              installation solutions for homes and businesses.
+            </p>
+
+            <p class="home-about-text">
+              We understand how important a properly functioning A/C system is
+              for your comfort. That's why we focus on fast response,
+              professional workmanship, transparent pricing, and dependable
+              service on every job.
+            </p>
+
+            <!-- FEATURES -->
+            <div class="home-about-features">
+              <div class="home-about-feature">
+                <div class="feature-check">
+                  <i class="fas fa-check"></i>
+                </div>
+
+                <span>Certified Technicians</span>
+              </div>
+
+              <div class="home-about-feature">
+                <div class="feature-check">
+                  <i class="fas fa-check"></i>
+                </div>
+
+                <span>Same-Day Service</span>
+              </div>
+
+              <div class="home-about-feature">
+                <div class="feature-check">
+                  <i class="fas fa-check"></i>
+                </div>
+
+                <span>Transparent Pricing</span>
+              </div>
+
+              <div class="home-about-feature">
+                <div class="feature-check">
+                  <i class="fas fa-check"></i>
+                </div>
+
+                <span>Satisfaction Guaranteed</span>
+              </div>
+            </div>
+
+            <!-- BUTTON -->
+            <a href="about.html" class="home-about-btn">
+              Learn More About Us
+
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Counter Section -->
+      <section class="stats-band">
+        <div class="stats-band-bg"></div>
+
+        <div class="stats-band-container">
+          <div class="stats-band-grid">
+            <div class="stats-band-item reveal">
+              <h3 class="stats-band-number">
+                <span class="counter" data-target="10000" data-format="comma"
+                  >0</span
+                ><span>+</span>
+              </h3>
+              <p class="stats-band-label">Happy Customers</p>
+            </div>
+
+            <div class="stats-band-item reveal">
+              <h3 class="stats-band-number">
+                <span class="counter" data-target="8">0</span><span>+</span>
+              </h3>
+              <p class="stats-band-label">Years Experience</p>
+            </div>
+
+            <div class="stats-band-item reveal">
+              <h3 class="stats-band-number">
+                <span class="counter" data-target="5000" data-format="comma"
+                  >0</span
+                ><span>+</span>
+              </h3>
+              <p class="stats-band-label">Jobs Completed</p>
+            </div>
+
+            <div class="stats-band-item reveal">
+              <h3 class="stats-band-number">
+                <span class="counter" data-target="98">0</span><span>%</span>
+              </h3>
+              <p class="stats-band-label">Satisfaction Rate</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services" id="services">
+        <div class="section-header reveal">
+          <span class="section-tag">Our Services</span>
+          <h2 class="section-title">
+            Complete A/C <span class="highlight">Solutions</span>
+          </h2>
+          <p class="section-desc">
+            From installation to maintenance, we provide comprehensive air
+            conditioning services tailored to your needs.
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>A/C Maintenance</h3>
+            <p>
+              Regular maintenance to keep your system running efficiently.
+              Includes filter replacement, coil cleaning, refrigerant check, and
+              full system inspection.
+            </p>
+            <a href="contact.html" class="service-link"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <i class="fas fa-wrench"></i>
+            </div>
+            <h3>A/C Repair</h3>
+            <p>
+              Quick and reliable repairs for all brands and models. We diagnose
+              issues accurately and fix them right the first time, saving you
+              time and money.
+            </p>
+            <a href="contact.html" class="service-link"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <i class="fas fa-broom"></i>
+            </div>
+            <h3>Deep Cleaning</h3>
+            <p>
+              Thorough cleaning of ducts, coils, and filters to improve air
+              quality and system efficiency. Remove dust, mold, and allergens
+              from your system.
+            </p>
+            <a href="contact.html" class="service-link"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <i class="fas fa-gear"></i>
+            </div>
+            <h3>Installation</h3>
+            <p>
+              Professional A/C installation for homes and businesses. We help
+              you choose the right system and install it with precision for
+              optimal performance.
+            </p>
+            <a href="contact.html" class="service-link"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <i class="fas fa-gas-pump"></i>
+            </div>
+            <h3>Gas Refilling</h3>
+            <p>
+              Expert refrigerant refilling and leak detection. We use
+              eco-friendly refrigerants and ensure your system maintains the
+              perfect cooling temperature.
+            </p>
+            <a href="contact.html" class="service-link"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>Emergency Service</h3>
+            <p>
+              24/7 emergency support for unexpected breakdowns. Our rapid
+              response team is always ready to restore your comfort when you
+              need it most.
+            </p>
+            <a href="contact.html" class="service-link"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="div-center mr-top">
+          <a href="services.html" class="home-about-btn">
+            Explore Our Services
+
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- Why Choose Us -->
+      <section class="why-us">
+        <div class="section-header reveal">
+          <span
+            class="section-tag"
+            style="background: rgba(255, 255, 255, 0.1); color: var(--accent)"
+            >Why Choose Us</span
+          >
+          <h2 class="section-title">
+            The Shaa Marco <span class="highlight">Difference</span>
+          </h2>
+          <p class="section-desc">
+            Discover why thousands of customers trust us with their air
+            conditioning needs.
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card reveal">
+            <div class="feature-card-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>On-Time Service</h3>
+            <p>
+              We value your time. Our technicians arrive promptly and complete
+              work efficiently without compromising quality.
+            </p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-card-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3>Quality Parts</h3>
+            <p>
+              We use only genuine, high-quality replacement parts that ensure
+              longevity and optimal performance.
+            </p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-card-icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <h3>Expert Team</h3>
+            <p>
+              Our technicians undergo continuous training to stay updated with
+              the latest A/C technologies and techniques.
+            </p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-card-icon">
+              <i class="fas fa-hand-holding-dollar"></i>
+            </div>
+            <h3>Best Prices</h3>
+            <p>
+              Competitive pricing with no hidden costs. Get premium service
+              without breaking your budget.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="testimonials">
+        <div class="section-header reveal">
+          <span class="section-tag">Testimonials</span>
+          <h2 class="section-title">
+            What Our <span class="highlight">Clients Say</span>
+          </h2>
+        </div>
+        <div class="testimonials-wrapper">
+          <div class="testimonial-slider">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "Shaa Marco saved us during the peak of summer! Our A/C broke
+                down and they had it fixed within hours. Professional, fast, and
+                fairly priced."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">AK</div>
+                <div>
+                  <h4>Ahmed Khalid</h4>
+                  <p>Homeowner</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "We've been using their maintenance service for our office
+                building for 3 years now. Excellent service, always on time, and
+                our energy bills have dropped significantly."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">SM</div>
+                <div>
+                  <h4>Sarah Mitchell</h4>
+                  <p>Office Manager</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "The deep cleaning service was incredible. The air quality in
+                our home improved immediately. The team was thorough,
+                respectful, and left everything spotless."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">RJ</div>
+                <div>
+                  <h4>Rajesh Joshi</h4>
+                  <p>Restaurant Owner</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "Best A/C service company we've ever used. Their technicians are
+                knowledgeable and explain everything clearly. Highly recommend
+                for any A/C needs!"
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">LF</div>
+                <div>
+                  <h4>Lina Fernandez</h4>
+                  <p>Property Manager</p>
+                </div>
+              </div>
+            </div>
+            <!-- Duplicate for infinite scroll -->
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "Shaa Marco saved us during the peak of summer! Our A/C broke
+                down and they had it fixed within hours. Professional, fast, and
+                fairly priced."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">AK</div>
+                <div>
+                  <h4>Ahmed Khalid</h4>
+                  <p>Homeowner</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "We've been using their maintenance service for our office
+                building for 3 years now. Excellent service, always on time, and
+                our energy bills have dropped significantly."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">SM</div>
+                <div>
+                  <h4>Sarah Mitchell</h4>
+                  <p>Office Manager</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "The deep cleaning service was incredible. The air quality in
+                our home improved immediately. The team was thorough,
+                respectful, and left everything spotless."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">RJ</div>
+                <div>
+                  <h4>Rajesh Joshi</h4>
+                  <p>Restaurant Owner</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "Best A/C service company we've ever used. Their technicians are
+                knowledgeable and explain everything clearly. Highly recommend
+                for any A/C needs!"
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">LF</div>
+                <div>
+                  <h4>Lina Fernandez</h4>
+                  <p>Property Manager</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
