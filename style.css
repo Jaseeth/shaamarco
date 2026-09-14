@@ -1,24 +1,35 @@
 :root {
-  --primary: #0066cc;
-  --primary-dark: #004d99;
-  --accent: #00d4aa;
-  --accent-light: #e6fff9;
-  --dark: #0a1628;
-  --darker: #070f1a;
-  --light: #f8fafc;
+  --primary: #0b3b91;
+  --primary-dark: #082d6f;
+  --accent: #00bfae;
+  --accent-light: #e8fbf8;
+
+  /* Main text colors */
+  --dark: #0b1f33;
+  --darker: #071522;
+
+  /* Light theme surfaces */
+  --light: #f5f9fc;
   --white: #ffffff;
-  --gray: #64748b;
-  --gray-light: #e2e8f0;
-  --gradient-1: linear-gradient(135deg, #0066cc 0%, #00d4aa 100%);
-  --gradient-2: linear-gradient(135deg, #00d4aa 0%, #0066cc 100%);
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --surface: #ffffff;
+  --surface-soft: #f1f7fb;
+  --surface-blue: #eaf3fb;
+
+  --gray: #607086;
+  --gray-light: #dfe7ef;
+
+  --gradient-1: linear-gradient(135deg, #0b3b91 0%, #00bfae 100%);
+  --gradient-2: linear-gradient(135deg, #00bfae 0%, #0b3b91 100%);
+
+  --shadow-sm: 0 1px 2px rgba(11, 31, 51, 0.05);
   --shadow-md:
-    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    0 4px 10px rgba(11, 31, 51, 0.08),
+    0 2px 4px rgba(11, 31, 51, 0.05);
   --shadow-lg:
-    0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    0 12px 28px rgba(11, 31, 51, 0.10);
   --shadow-xl:
-    0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  --shadow-glow: 0 0 40px rgba(0, 212, 170, 0.3);
+    0 24px 55px rgba(11, 31, 51, 0.12);
+  --shadow-glow: 0 0 35px rgba(0, 191, 174, 0.20);
 }
 
 * {
@@ -3916,4 +3927,470 @@ section {
 
     box-shadow:
         0 0 18px rgba(0, 212, 170, 0.15);
+}
+/* =========================================================
+   LIGHT THEME OVERRIDES
+   Keeps the existing layout, animations and effects intact.
+========================================================= */
+
+/* Base */
+body {
+  background: var(--light);
+  color: var(--dark);
+}
+
+::-webkit-scrollbar-track {
+  background: #eef4f8;
+}
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar,
+.inner-page .navbar {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 4px 24px rgba(11, 31, 51, 0.08);
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 8px 30px rgba(11, 31, 51, 0.10);
+}
+
+.logo-text {
+  color: var(--primary);
+}
+
+.logo-text span {
+  color: var(--accent);
+}
+
+.nav-links a {
+  color: #31445b;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--primary);
+}
+
+.mobile-menu-btn,
+.mobile-menu-close {
+  color: var(--primary);
+}
+
+/* Mobile menu */
+.mobile-menu {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(11, 59, 145, 0.08), transparent 35%),
+    radial-gradient(circle at 80% 80%, rgba(0, 191, 174, 0.08), transparent 35%),
+    rgba(255, 255, 255, 0.98);
+}
+
+.mobile-menu a {
+  color: var(--dark);
+}
+
+.mobile-menu a:hover {
+  color: var(--accent);
+}
+
+/* =========================================================
+   HOME HERO
+========================================================= */
+
+.hero {
+  background: var(--light);
+}
+
+.hero-bg {
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(11, 59, 145, 0.10) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(0, 191, 174, 0.10) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(11, 59, 145, 0.06) 0%, transparent 50%);
+}
+
+.hero-badge {
+  background: rgba(0, 191, 174, 0.08);
+  border-color: rgba(0, 191, 174, 0.20);
+  color: var(--primary);
+}
+
+.hero-title,
+.stat-number {
+  color: var(--dark);
+}
+
+.hero-subtitle,
+.stat-label {
+  color: var(--gray);
+}
+
+.btn-outline {
+  color: var(--primary);
+  border-color: rgba(11, 59, 145, 0.24);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: transparent;
+}
+
+.scroll-indicator {
+  color: rgba(11, 31, 51, 0.58);
+}
+
+.scroll-mouse {
+  border-color: rgba(11, 59, 145, 0.38);
+}
+
+.scroll-indicator i {
+  color: rgba(11, 31, 51, 0.55);
+}
+
+/* =========================================================
+   GENERAL LIGHT SECTIONS
+========================================================= */
+
+.about,
+.home-about-section,
+.contact,
+.about-why-section {
+  background: var(--white);
+}
+
+.services,
+.testimonials,
+.service-cta-section {
+  background: var(--light);
+}
+
+.service-card,
+.testimonial-card,
+.about-why-item,
+.contact-form {
+  background: var(--white);
+  border-color: var(--gray-light);
+}
+
+/* =========================================================
+   WHY CHOOSE US
+========================================================= */
+
+.why-us {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(11, 59, 145, 0.08), transparent 35%),
+    radial-gradient(circle at 85% 80%, rgba(0, 191, 174, 0.08), transparent 35%),
+    var(--surface-blue);
+}
+
+.why-us::before {
+  background: radial-gradient(
+    circle,
+    rgba(11, 59, 145, 0.08) 0%,
+    transparent 70%
+  );
+}
+
+.why-us .section-title {
+  color: var(--dark);
+}
+
+.why-us .section-desc {
+  color: var(--gray);
+  opacity: 1;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(11, 59, 145, 0.10);
+  box-shadow: var(--shadow-md);
+}
+
+.feature-card:hover {
+  background: var(--white);
+  border-color: rgba(0, 191, 174, 0.30);
+}
+
+.feature-card h3 {
+  color: var(--dark);
+}
+
+.feature-card p {
+  color: var(--gray);
+}
+
+/* =========================================================
+   STATS BAND
+========================================================= */
+
+.stats-band,
+.stats-band-bg {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(11, 59, 145, 0.08), transparent 35%),
+    radial-gradient(circle at 85% 80%, rgba(0, 191, 174, 0.08), transparent 35%),
+    var(--surface-blue);
+}
+
+.stats-band-number,
+.stats-band-number span:last-child {
+  color: var(--dark);
+}
+
+.stats-band-label {
+  color: var(--primary);
+}
+
+/* =========================================================
+   INNER PAGE HERO / BANNERS
+========================================================= */
+
+.inner-hero {
+  background: var(--light);
+}
+
+.inner-hero-bg,
+.services-hero .inner-hero-bg,
+.contact-hero .inner-hero-bg {
+  background:
+    radial-gradient(ellipse at 20% 40%, rgba(11, 59, 145, 0.10) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 30%, rgba(0, 191, 174, 0.10) 0%, transparent 45%),
+    linear-gradient(135deg, #ffffff 0%, #f2f7fb 50%, #eaf8f6 100%);
+}
+
+.inner-hero-glow-left {
+  background: rgba(11, 59, 145, 0.10);
+}
+
+.inner-hero-glow-right {
+  background: rgba(0, 191, 174, 0.10);
+}
+
+.inner-hero-badge {
+  background: rgba(0, 191, 174, 0.08);
+  border-color: rgba(0, 191, 174, 0.20);
+  color: var(--primary);
+}
+
+.inner-hero-title {
+  color: var(--dark);
+}
+
+.inner-hero-text {
+  color: var(--gray);
+}
+
+/* =========================================================
+   CORE VALUES
+========================================================= */
+
+.core-values-section {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(11, 59, 145, 0.08), transparent 35%),
+    radial-gradient(circle at 85% 80%, rgba(0, 191, 174, 0.08), transparent 35%),
+    var(--surface-soft);
+}
+
+.core-values-tag {
+  background: var(--accent-light);
+  border-color: rgba(0, 191, 174, 0.18);
+  color: var(--primary);
+}
+
+.core-values-title,
+.core-value-content h3 {
+  color: var(--dark);
+}
+
+.core-values-desc,
+.core-value-content p {
+  color: var(--gray);
+}
+
+.core-value-card {
+  background: var(--white);
+  border-color: var(--gray-light);
+  box-shadow: var(--shadow-md);
+}
+
+.core-value-card:hover {
+  background: var(--white);
+  border-color: rgba(0, 191, 174, 0.32);
+  box-shadow: var(--shadow-lg);
+}
+
+/* =========================================================
+   HOW IT WORKS
+========================================================= */
+
+.how-it-works-section {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(11, 59, 145, 0.08), transparent 35%),
+    radial-gradient(circle at 85% 80%, rgba(0, 191, 174, 0.08), transparent 35%),
+    var(--surface-blue);
+}
+
+.how-it-works-tag {
+  background: var(--accent-light);
+  border-color: rgba(0, 191, 174, 0.18);
+  color: var(--primary);
+}
+
+.how-it-works-title,
+.how-it-works-card h3 {
+  color: var(--dark);
+}
+
+.how-it-works-desc,
+.how-it-works-card p {
+  color: var(--gray);
+}
+
+.how-it-works-card {
+  background: rgba(255, 255, 255, 0.90);
+  border-color: rgba(11, 59, 145, 0.10);
+  box-shadow: var(--shadow-md);
+}
+
+.how-it-works-card:hover {
+  background: var(--white);
+  border-color: rgba(0, 191, 174, 0.30);
+  box-shadow: var(--shadow-lg);
+}
+
+.how-step-number {
+  background: linear-gradient(
+    135deg,
+    rgba(11, 59, 145, 0.75),
+    rgba(0, 191, 174, 0.65)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.how-step-arrow {
+  background: var(--white);
+  border-color: rgba(0, 191, 174, 0.30);
+  color: var(--primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.how-it-works-card:hover .how-step-arrow {
+  color: var(--accent);
+}
+
+/* =========================================================
+   SERVICE CTA
+========================================================= */
+
+.service-cta-wrapper {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(11, 59, 145, 0.08), transparent 35%),
+    radial-gradient(circle at 85% 80%, rgba(0, 191, 174, 0.08), transparent 35%),
+    linear-gradient(135deg, #ffffff 0%, #eef6fb 55%, #eaf9f6 100%);
+  border: 1px solid var(--gray-light);
+  box-shadow: var(--shadow-xl);
+}
+
+.service-cta-content .section-tag {
+  background: var(--accent-light);
+  border-color: rgba(0, 191, 174, 0.18);
+  color: var(--primary);
+}
+
+.service-cta-title {
+  color: var(--dark);
+}
+
+.service-cta-text {
+  color: var(--gray);
+}
+
+.service-cta-feature {
+  color: var(--dark);
+}
+
+.service-cta-feature i {
+  background: rgba(0, 191, 174, 0.10);
+  color: var(--accent);
+}
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-form {
+  background: var(--surface-soft);
+  border-color: rgba(11, 31, 51, 0.06);
+}
+
+.social-link {
+  background: var(--white);
+}
+
+.contact-item-link {
+  color: inherit;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(11, 59, 145, 0.07), transparent 35%),
+    radial-gradient(circle at 85% 80%, rgba(0, 191, 174, 0.06), transparent 30%),
+    #f2f7fb;
+  color: var(--dark);
+  border-top: 1px solid var(--gray-light);
+}
+
+.footer-brand p {
+  color: var(--gray);
+}
+
+.footer-links h4 {
+  color: var(--dark);
+}
+
+.footer-links a {
+  color: var(--gray);
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+}
+
+.footer-bottom {
+  border-top-color: rgba(11, 31, 51, 0.10);
+}
+
+.footer-bottom p {
+  color: #748397;
+}
+
+/* Keep icon/button text white where the gradient itself is dark enough */
+.logo-icon,
+.nav-cta,
+.btn-primary,
+.service-icon,
+.feature-card-icon,
+.testimonial-avatar,
+.floating-cta,
+.home-about-btn,
+.submit-btn,
+.service-cta-btn,
+.about-why-floating-icon {
+  color: #ffffff;
+}
+
+
+.footer-description {
+  margin-top: 10px !important;
 }
