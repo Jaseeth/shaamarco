@@ -4394,3 +4394,96 @@ body {
 .footer-description {
   margin-top: 10px !important;
 }
+
+.contact-phone-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-phone-link:hover {
+    color: var(--primary);
+}
+
+/* =========================================
+   HERO COOL AIR EFFECT
+========================================= */
+
+.hero-air-effect {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+/* Keep actual content above effect */
+.hero-content,
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Floating particle */
+.air-particle {
+    position: absolute;
+
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #0b3b91,
+        #00bfae
+    );
+
+    box-shadow:
+        0 0 8px rgba(11, 59, 145, 0.65),
+        0 0 16px rgba(0, 191, 174, 0.5);
+
+    opacity: 0;
+}
+
+
+/* Larger blurred cool glow */
+.air-glow {
+    position: absolute;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(11, 111, 184, 0.16) 0%,
+            rgba(0, 191, 174, 0.10) 40%,
+            transparent 72%
+        );
+
+    filter: blur(10px);
+
+    pointer-events: none;
+}
+
+
+/* Glow 1 */
+.air-glow-one {
+    width: 320px;
+    height: 320px;
+
+    top: -100px;
+    left: -80px;
+}
+
+
+/* Glow 2 */
+.air-glow-two {
+    width: 400px;
+    height: 400px;
+
+    right: -130px;
+    bottom: -140px;
+}

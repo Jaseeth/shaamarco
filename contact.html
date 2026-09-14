@@ -67,24 +67,36 @@
             </p>
 
             <div class="contact-details">
-              <a
-                href="tel:+97431292637"
-                class="contact-item contact-item-link"
-              >
+              <div class="contact-item">
                 <div class="contact-item-icon">
                   <i class="fas fa-phone"></i>
                 </div>
 
                 <div>
                   <h4>Phone</h4>
-                  <p>+974 7790 2720</p>
-                  <p>+974 3032 1758</p>
-                  <p>+974 7475 3140</p>
+
+                  <p>
+                    <a href="tel:+97477902720" class="contact-phone-link">
+                      +974 7790 2720
+                    </a>
+                  </p>
+
+                  <p>
+                    <a href="tel:+97430321758" class="contact-phone-link">
+                      +974 3032 1758
+                    </a>
+                  </p>
+
+                  <p>
+                    <a href="tel:+97474753140" class="contact-phone-link">
+                      +974 7475 3140
+                    </a>
+                  </p>
                 </div>
-              </a>
+              </div>
 
               <a
-                href="mailto:info@shaamarco.com"
+                href="mailto:shaamarcoqatar@gmail.com"
                 class="contact-item contact-item-link"
               >
                 <div class="contact-item-icon">
@@ -139,49 +151,75 @@
                   <input
                     type="text"
                     id="name"
+                    name="name"
                     placeholder="Your name"
                     required
                   />
                 </div>
+
                 <div class="form-group">
                   <label for="phone">Phone Number</label>
                   <input
                     type="tel"
                     id="phone"
+                    name="phone"
                     placeholder="+974 1122 3344"
                     required
                   />
                 </div>
               </div>
+
               <div class="form-group">
                 <label for="email">Email Address</label>
+
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   placeholder="you@example.com"
                   required
                 />
               </div>
+
               <div class="form-group">
                 <label for="service">Service Needed</label>
-                <select id="service" required>
+
+                <select id="service" name="service" required>
                   <option value="">Select a service</option>
-                  <option value="hvacInstallationMaintenance">HVAC Installation & Maintenance</option>
-                  <option value="mepProjects">MEP Projects</option>
-                  <option value="contracting">Contracting</option>
-                  <option value="cleaning">Cleaning Servicing</option>
-                  <option value="buildingMaintenance">Building Maintenance</option>
+
+                  <option value="HVAC Installation & Maintenance">
+                    HVAC Installation & Maintenance
+                  </option>
+
+                  <option value="MEP Projects">MEP Projects</option>
+
+                  <option value="Contracting">Contracting</option>
+
+                  <option value="Cleaning Servicing">Cleaning Servicing</option>
+
+                  <option value="Building Maintenance">
+                    Building Maintenance
+                  </option>
+
+                  <option value="A/C Repair">A/C Repair</option>
                 </select>
               </div>
+
               <div class="form-group">
                 <label for="message">Message</label>
+
                 <textarea
                   id="message"
-                  placeholder="Tell us about your A/C needs..."
+                  name="message"
+                  placeholder="Tell us about your service requirements..."
+                  required
                 ></textarea>
               </div>
+
               <button type="submit" class="submit-btn">
-                Send Message <i class="fas fa-paper-plane"></i>
+                Send Message
+
+                <i class="fas fa-paper-plane"></i>
               </button>
             </form>
           </div>
@@ -189,6 +227,8 @@
       </section>
     </main>
     <div id="site-footer"></div>
-    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
   </body>
 </html>
